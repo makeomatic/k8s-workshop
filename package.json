@@ -1,0 +1,28 @@
+{
+  "name": "workshop",
+  "version": "0.0.0",
+  "description": "Kubernetes workshop example",
+  "author": "...",
+  "license": "NONE",
+  "main": "src",
+  "scripts": {
+    "start": "mfleet --lib ./src",
+    "amqp": "docker run --name amqp -p 5672:5672 rabbitmq"
+  },
+  "devDependencies": {
+    "eslint": "^6.2.2",
+    "eslint-config-prettier": "^6.1.0",
+    "eslint-plugin-prettier": "^3.1.0",
+    "prettier": "^1.18.2"
+  },
+  "dependencies": {
+    "@hapi/hapi": "^18.4.0",
+    "@microfleet/core": "^15.1.0",
+    "@microfleet/transport-amqp": "^15.0.0",
+    "@microfleet/validation": "^8.1.2",
+    "common-errors": "^1.0.5",
+    "config": "^3.2.2",
+    "prom-client": "^11.5.3",
+    "uuid": "^3.3.3"
+  }
+}

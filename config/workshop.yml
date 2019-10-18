@@ -1,0 +1,6 @@
+amqp:
+  transport:
+    connection:
+      host:
+        - host: amqp
+          port: 5672

@@ -1,0 +1,31 @@
+name: workshop
+plugins: ["logger", "validator", "router", "http", "amqp", "prometheus"]
+maintenanceMode: false
+
+http:
+  server:
+    handler: hapi
+    port: 3000
+  router:
+    enabled: true
+
+logger:
+  defaultLogger: true
+
+router:
+  routes:
+    directory: src/actions
+    prefix: workshop
+    enabledGenericActions:
+      - health
+
+amqp:
+  transport:
+    connection:
+      host:
+        - host: localhost
+          port: 5672
+      login: guest
+      password: guest
+  router:
+    enabled: true

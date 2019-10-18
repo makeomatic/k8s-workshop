@@ -1,0 +1,6 @@
+http:
+  server:
+    port: HTTP_PORT
+router:
+  routes:
+    prefix: HTTP_PREFIX
