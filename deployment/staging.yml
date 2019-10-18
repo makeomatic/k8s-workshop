@@ -6,3 +6,8 @@ image:
 env:
   - name: NODE_ENV
     value: workshop
+service:
+  type: LoadBalancer
+  ports:
+    - name: http
+      port: 3000
