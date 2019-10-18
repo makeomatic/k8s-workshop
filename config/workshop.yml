@@ -2,5 +2,7 @@ amqp:
   transport:
     connection:
       host:
-        - host: amqp
+        - host: amqp-maximko-rabbitmq.maximko.svc.cluster.local
           port: 5672
+      login: user
+      password: nhU2TkUhzo

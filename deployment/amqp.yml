@@ -1,0 +1,13 @@
+image:
+  debug: true
+
+rabbitmq:
+  username: user
+  password: user
+
+resources:
+  requests:
+    memory: 1G
+    cpu: 100m
+  limits:
+    memory: 1G

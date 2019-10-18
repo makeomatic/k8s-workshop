@@ -1,0 +1,8 @@
+name: ms-andrey
+replicaCount: 2
+image:
+  repository: gcr.io/cappasity-staging/workshop-andrey
+  tag: b130f28-dirty
+env:
+  - name: NODE_ENV
+    value: workshop

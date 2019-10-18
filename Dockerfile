@@ -1,4 +1,4 @@
-FROM node:11.9-alpine
+FROM node:11.10.1-alpine
 LABEL Author Makeomatic team
 ENV NODE_DIR /home/nodejs/app
 WORKDIR $NODE_DIR

@@ -1,0 +1,17 @@
+apiVersion: skaffold/v1beta16
+kind: Config
+
+build:
+  artifacts:
+    - image: gcr.io/cappasity-staging/workshop-andrey
+
+deploy:
+  helm:
+    releases:
+      - name: workshop-andrey
+        chartPath: makeomatic/installer
+        valuesFiles:
+          - deployment/staging.yml
+        namespace: andrey
+        wait: true
+        remote: true
