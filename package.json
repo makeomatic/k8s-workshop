@@ -16,7 +16,7 @@
     "prettier": "^1.18.2"
   },
   "dependencies": {
-    "@hapi/hapi": "^18.4.0",
+    "@hapi/hapi": "^19.1.1",
     "@microfleet/core": "^15.1.0",
     "@microfleet/transport-amqp": "^15.0.0",
     "@microfleet/validation": "^8.1.2",
